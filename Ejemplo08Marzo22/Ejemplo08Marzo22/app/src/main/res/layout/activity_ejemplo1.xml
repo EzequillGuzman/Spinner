@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Ejemplo1Activity">
+
+    <TextView
+        android:id="@+id/ejem1_tv_titulo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Ejemplo 1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.022"
+
+        />
+
+    <TextView
+        android:id="@+id/ejem1_tv_descripcion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Solicitar un número, al dar clic sobre un botón deberá mostrar en una lista (Spinner) los números de 1 en 1, desde el número 1 hasta el valor ingresado por el usuario."
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ejem1_tv_titulo"
+        app:layout_constraintVertical_bias="0.033" />
+
+    <EditText
+        android:id="@+id/ejem1_et_numero"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ejem1_tv_descripcion"
+        app:layout_constraintVertical_bias="0.001"
+        android:inputType="number"
+        android:hint="Ingrese un número entero"
+        />
+
+    <Button
+        android:id="@+id/ejem1_btn_ejemplo1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_marginStart="4dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ejem1_et_numero"
+        app:layout_constraintVertical_bias="0.039"
+        android:text="Generar Números"
+        />
+
+    <Spinner
+        android:id="@+id/ejem1_sp_ejemplo1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ejem1_btn_ejemplo1"
+        app:layout_constraintVertical_bias="0.056"
+
+        />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
